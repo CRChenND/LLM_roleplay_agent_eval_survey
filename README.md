@@ -1,33 +1,59 @@
-# LLM Role-Playing Agent Evaluation Survey
+# LLM Role-Playing Agent (RPA) Evaluation Survey
 
-Role-Playing Agent (RPA) is an increasingly popular type of LLM Agent that simulates human-like behaviors in a variety of tasks. However, evaluating RPAs is challenging due to diverse task requirements and agent designs.This paper proposes an evidence-based, actionable, and generalizable evaluation design guideline for LLM-based RPA by systematically reviewing $1,676$ papers published between Jan. 2021 and Dec. 2024. Our analysis identifies six agent attributes, seven task attributes, and seven evaluation metrics from existing literature. Based on these findings, we present an RPA evaluation design guideline to help researchers develop more systematic and consistent evaluation methods.
-
-![RPA evaluation design guideline. To illustrate how to use it in practice, we pretended we were selecting the evaluation metrics for the “Stanford Agent Village” (Park et al., 2023) given agent attributes (yellow) and task attributes (pink). The original authors’ selection of evaluation metrics (purple and blue) perfectly aligns with our RPA design guideline, which echoes their work’s robustness.](assets/Teaser_survey_good_example_landscape.png)
-
-RPA evaluation design guideline. To illustrate how to use it in practice, we pretended we were selecting the evaluation metrics for the “Stanford Agent Village” [(Park et al., 2023)](https://dl.acm.org/doi/abs/10.1145/3586183.3606763) given agent attributes (yellow) and task attributes (pink). The original authors’ selection of evaluation metrics (purple and blue) perfectly aligns with our RPA design guideline, which echoes their work’s robustness.
-
-For more details, please refer to our paper:
+This is the repository for our survey paper:
 >[Towards a Design Guideline for RPA Evaluation: A Survey of Large Language Model-Based Role-Playing Agents]()
 >
 >Chaoran Chen, Bingsheng Yao, Ruishi Zou, Wenyue Hua, Weimin Lyu, Toby Jia-Jun Li, Dakuo Wang
 >
 >[Arxiv]() | [PDF](assets/Towards_a_Design_Guideline_for_RPA_Evaluation__A_Survey_of_Large_Language_Model_Based_Role_Playing_Agents.pdf) | [Cite](#citation)
 
+## To-Do Items
 
+- [ ] Add references to the glossary
+- [ ] Add distribution diagrams
+- [x] Add RPA evaluation design guideline
+
+<!--
 ## Table of Content
-- [LLM Role-Playing Agent Evaluation Survey](#llm-role-playing-agent-evaluation-survey)
-  - [Table of Content](#table-of-content)
+- [Abstract](#abstract)
+- [RPA Design](#rpa-design)
   - [Agent Attributes](#agent-attributes)
   - [Task Attributes](#task-attributes)
-  - [Metrics](#metrics)
-    - [Agent- \& Task-Oriented Metrics](#agent---task-oriented-metrics)
-    - [Top 3 frequently used agent-oriented metrics for each agent attribute](#top-3-frequently-used-agent-oriented-metrics-for-each-agent-attribute)
-    - [Top 3 frequently used task-oriented metrics for each task attribute](#top-3-frequently-used-task-oriented-metrics-for-each-task-attribute)
-    - [Agent-oriented evaluation metrics glossary](#agent-oriented-evaluation-metrics-glossary)
-    - [Task-oriented evaluation metrics glossary](#task-oriented-evaluation-metrics-glossary)
-  - [Relationships Between Agent Attributes and Downstream Tasks](#relationships-between-agent-attributes-and-downstream-tasks)
+- [RPA Evaluation Metrics](#rpa-evaluation-metrics)
+  - [Agent- \& Task-Oriented Metrics](#agent---task-oriented-metrics)
+- [Relationships Between Agent Attributes and Downstream Tasks](#relationships-between-agent-attributes-and-downstream-tasks)
+- [RPA Evaluation Design Guideline](#rpa-evaluation-design-guideline)
+  - [Top 3 Frequently used agent-oriented metrics for each agent attribute](#top-3-frequently-used-agent-oriented-metrics-for-each-agent-attribute)
+  - [Top 3 frequently used task-oriented metrics for each task attribute](#top-3-frequently-used-task-oriented-metrics-for-each-task-attribute)
+- [Citation](#citation)
+- [Glossary](#glossary)
+  - [Agent-Oriented Evaluation Metrics Glossary](#agent-oriented-evaluation-metrics-glossary)
+  - [Task-oriented evaluation metrics glossary](#task-oriented-evaluation-metrics-glossary)
+  -->
 
-## Agent Attributes
+## Table of Content
+- [Abstract](#abstract)
+- [RPA Design](#rpa-design)
+- [RPA Evaluation Metrics](#rpa-evaluation-metrics)
+- [RPA Evaluation Design Guideline](#rpa-evaluation-design-guideline)
+  - [STEP 1. Selecting Agent-Oriented Metrics Based on Agent Attributes](#step-1-selecting-agent-oriented-metrics-based-on-agent-attributes)
+  - [STEP 2. Selecting Task-Oriented Metrics Based on Task Attributes](#step-2-selecting-task-oriented-metrics-based-on-task-attributes)
+- [Glossary](#glossary)
+  - [Agent-Oriented Evaluation Metrics Glossary](#agent-oriented-evaluation-metrics-glossary)
+  - [Task-Oriented Evaluation Metrics Glossary](#task-oriented-evaluation-metrics-glossary)
+
+## Abstract
+Role-Playing Agent (RPA) is an increasingly popular type of LLM Agent that simulates human-like behaviors in a variety of tasks. However, evaluating RPAs is challenging due to diverse task requirements and agent designs.This paper proposes an evidence-based, actionable, and generalizable evaluation design guideline for LLM-based RPA by systematically reviewing $1,676$ papers published between Jan. 2021 and Dec. 2024. Our analysis identifies six agent attributes, seven task attributes, and seven evaluation metrics from existing literature. Based on these findings, we present an RPA evaluation design guideline to help researchers develop more systematic and consistent evaluation methods.
+
+<p align="center">
+<img src="assets/Teaser_survey_good_example_landscape.png" alt="drawing" width="75%"/>
+  
+  <em>RPA evaluation design guideline. To illustrate how to use it in practice, we pretended we were selecting the evaluation metrics for the “Stanford Agent Village” (Park et al., 2023) given agent attributes (yellow) and task attributes (pink). The original authors’ selection of evaluation metrics (purple and blue) perfectly aligns with our RPA design guideline, which echoes their work’s robustness.</em>
+</p>
+
+## RPA Design
+
+### Agent Attributes
 
 | **Agent Attributes**       | **Definition**                                                                 | **Examples** |
 |------------------------|--------------------------------------------------------------------------|----------|
@@ -38,7 +64,7 @@ For more details, please refer to our paper:
 | **Skill and Expertise** | The knowledge level, proficiency, and capability in specific domains or technologies. | Knowledge level, technology proficiency, skills |
 | **Social Relationships** | The nature and dynamics of interactions with others, including roles, connections, and communication styles. | Parenting styles, interactions with players |
 
-## Task Attributes
+### Task Attributes
 
 | **Task Attributes**           | **Definition** |
 |---------------------------|--------------------------------------------------------------|
@@ -50,7 +76,8 @@ For more details, please refer to our paper:
 | **Educational Training**  | Simulating teachers and learners to enable personalized teaching and accommodate learner needs. |
 | **Writing**              | Simulating readers or characters to support character development and audience understanding. |
 
-## Metrics
+
+## RPA Evaluation Metrics
 
 ### Agent- & Task-Oriented Metrics
 
@@ -64,8 +91,36 @@ For more details, please refer to our paper:
 | **Content and Textual**     | Evaluate the quality, coherence, and diversity of RPAs’ text, including semantic understanding, linguistic style, and engagement. | Content similarity               |
 | **Bias, Fairness, and Ethics** | Assess biases, extreme or unbalanced content, or stereotyping behavior.                     | Factual error rate               |
 
-### Top 3 frequently used agent-oriented metrics for each agent attribute
 
+
+
+
+### Relationships Between Agent Attributes and Downstream Tasks
+
+
+<p align="center">
+<img src="assets/heatmap.png" alt="drawing" width="50%"/>
+  
+  <em>Relationships between agent attributes and downstream tasks. The numbers in the heatmap represent the paper counts.</em>
+</p>
+
+
+
+
+## RPA Evaluation Design Guideline
+
+We observed that both agent design and evaluation can be broadly divided into two categories: **agent-oriented** and **task-oriented**. This distinction led us to investigate patterns between agent design and evaluation and derive an RPA evaluation design guideline recommended for future research on RPA. 
+We analyzed the distribution of agent attributes and agent-oriented metrics as well as the distribution of task attributes and task-oriented metrics.
+
+For the specific metrics that were used by existing work under each category, please refer to the [glossary](#glossary) below.
+
+
+### STEP 1. Selecting Agent-Oriented Metrics Based on Agent Attributes
+
+Our analysis reveals that, for each agent attribute, the top three categories of agent-oriented metrics account for the majority of all metric types.
+Thus, we recommend future research to employ the top-three types of agent-oriented metrics for each agent attribute designed for the RPA, as listed below.
+
+**Top 3 Frequently Used Agent-Oriented Metrics for Each Agent Attribute**
 | **Agent Attributes**       | **Top 3 Agent-Oriented Metrics** |
 |------------------------|--------------------------------------------------------------|
 | **Activity History**   | External alignment metrics, internal consistency metrics, content and textual metrics |
@@ -75,7 +130,13 @@ For more details, please refer to our paper:
 | **Skill and Expertise** | External alignment metrics, internal consistency metrics, content and textual metrics |
 | **Social Relationship** | Psychological metrics, external alignment metrics, social and decision-making metrics |
 
-### Top 3 frequently used task-oriented metrics for each task attribute
+
+### STEP 2. Selecting Task-Oriented Metrics Based on Task Attributes
+
+Similarily, we observed that for each category of task attributes, the top three task-oriented metrics account for the vast majority of all metrics.
+Thus, we recommend future research to select the top-three types of task-oriented metrics according to task attributes, as listed below.
+
+**Top 3 Frequently Used Task-Oriented Metrics for Each Task Attribute**
 
 | **Task Attributes**         | **Top 3 Task-Oriented Metrics** |
 |-------------------------|--------------------------------------------------------------|
@@ -87,7 +148,17 @@ For more details, please refer to our paper:
 | **Educational Training**  | Psychological, performance, and content and textual metrics |
 | **Writing**              | Content and textual, psychological, and performance metrics |
 
-### Agent-oriented evaluation metrics glossary
+
+## Citation
+
+You may cite our paper:
+```
+```
+
+
+## Glossary
+
+### Agent-Oriented Evaluation Metrics Glossary
 
 | **Attribute** | **Category**       | **Agent-Oriented Metrics**          | **Approach**      | **Source**                     |
 |-------------------|-------------------|-------------------------------------|---------------|----------------------------|
@@ -159,7 +230,7 @@ For more details, please refer to our paper:
 | **Belief & Value**        | Social and decision-making metrics | Social value orientation (SVO-based Value Rationality Measurement) | Automatic | [Zhang et al., 2023b](#) |
 
 
-### Task-oriented evaluation metrics glossary
+### Task-Oriented Evaluation Metrics Glossary
 
 | **Task** | **Category**     | **Task-Oriented Metrics**    | **Approach**  | **Source**  |
 |----------|---------|-------------------------|-----------|---------|
@@ -423,10 +494,3 @@ For more details, please refer to our paper:
 | **Writing**  | Content and textual metrics| Non-Repetitiveness | Human | [Mishra et al., 2023](#) |
 | **Writing**  | Content and textual metrics| Response generation quality | Automatic | [Li et al., 2024a](#) |
 | **Writing**  | Content and textual metrics| Coherency | LLM | [Wang et al., 2024d](#) |
-
-## Relationships Between Agent Attributes and Downstream Tasks
-
-![Relationships between agent attributes and downstream tasks. The numbers in the heatmap represent the paper counts](assets/heatmap.png)
-
-Relationships between agent attributes and downstream tasks. The numbers in the heatmap represent the paper counts.
-
