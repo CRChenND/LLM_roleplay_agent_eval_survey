@@ -89,7 +89,7 @@ For more details, please refer to our paper:
 
 ### Agent-oriented evaluation metrics glossary
 
-| **Attribute Category**       | **Agent-Oriented Metrics**          | **Approach**      | **Source**                     |
+| **Attribute** | **Category**       | **Agent-Oriented Metrics**          | **Approach**      | **Source**                     |
 |--------------------------|--------------------------------|---------------|----------------------------|
 | **Belief & Value**       | Bias, fairness, ethics metrics | Exaggeration (normalized average cosine similarity) | Automatic | [Cheng et al., 2023](#) |
 | **Belief & Value**       | Bias, fairness, ethics metrics | Individuation (classification accuracy) | Automatic | [Cheng et al., 2023](#) |
