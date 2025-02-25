@@ -12,6 +12,7 @@ This is the repository for our survey paper:
 - [x] Add references to the glossary
 - [x] Add distribution diagrams
 - [x] Add RPA evaluation design guideline
+- [ ] Add an interactive website
 
 
 ## Table of Content
