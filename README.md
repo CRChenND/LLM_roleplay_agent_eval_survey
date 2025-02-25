@@ -5,7 +5,7 @@ This is the repository for our survey paper:
 >
 >Chaoran Chen, Bingsheng Yao, Ruishi Zou, Wenyue Hua, Weimin Lyu, Toby Jia-Jun Li, Dakuo Wang
 >
->[Arxiv]() | [PDF](assets/Towards_a_Design_Guideline_for_RPA_Evaluation__A_Survey_of_Large_Language_Model_Based_Role_Playing_Agents.pdf) | [Cite](#citation)
+>[Arxiv](https://arxiv.org/pdf/2502.13012) | [PDF](assets/Towards_a_Design_Guideline_for_RPA_Evaluation__A_Survey_of_Large_Language_Model_Based_Role_Playing_Agents.pdf) | [Cite](#citation)
 
 ## To-Do Items
 
@@ -198,7 +198,7 @@ You may cite our paper:
 | **Activity History**      | Content and textual metrics   | Clarity | Human | [Chen et al., 2024b](https://dl.acm.org/doi/10.1145/3613904.3642363) |
 | **Activity History**      | Content and textual metrics   | Diversity of dialog (Shannon entropy, intra-remote-clique, inter-remote-clique, semantic similarity, longest common subsequence similarity) | Automatic | [Ha et al., 2024](https://dl.acm.org/doi/pdf/10.1145/3613904.3642472) |
 | **Belief & Value**       | Content and textual metrics   | Diversity of dialog (Shannon entropy, intra-remote-clique, inter-remote-clique, semantic similarity, longest common subsequence similarity) | Automatic | [Gu et al., 2024](https://arxiv.org/abs/2403.13433) |
-| **Demographic Information** | Content and textual metrics | Coherence | LLM | [Li et al., 2024e](Schema-Guided Culture-Aware Complex Event Simulation with Multi-Agent Role-Play) |
+| **Demographic Information** | Content and textual metrics | Coherence | LLM | [Li et al., 2024e](https://aclanthology.org/2024.emnlp-demo.39.pdf) |
 | **Demographic Information** | Content and textual metrics | Attitudes (topic term frequency) | Automatic | [Fang et al., 2024](https://arxiv.org/pdf/2407.08067) |
 | **Demographic Information** | Content and textual metrics | Diversity of dialog (Shannon entropy, intra-remote-clique, inter-remote-clique, semantic similarity, longest common subsequence similarity) | Automatic | [Fang et al., 2024](https://arxiv.org/pdf/2407.08067) |
 | **Demographic Information** | Content and textual metrics | Clarity | Human | [Chen et al., 2024b](https://dl.acm.org/doi/10.1145/3613904.3642363) |
