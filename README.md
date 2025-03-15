@@ -5,19 +5,18 @@ This is the repository for our survey paper:
 >
 >Chaoran Chen, Bingsheng Yao, Ruishi Zou, Wenyue Hua, Weimin Lyu, Toby Jia-Jun Li, Dakuo Wang
 >
->[Arxiv](https://arxiv.org/pdf/2502.13012) | [PDF](assets/Towards_a_Design_Guideline_for_RPA_Evaluation__A_Survey_of_Large_Language_Model_Based_Role_Playing_Agents.pdf) | [Cite](#citation)
+>[Arxiv](https://arxiv.org/pdf/2502.13012) | [PDF](assets/Towards_a_Design_Guideline_for_RPA_Evaluation__A_Survey_of_Large_Language_Model_Based_Role_Playing_Agents.pdf) | [Webpage](https://agentsurvey.hailab.io/) | [Cite](#citation) 
 
-## To-Do Items
+<!-- ## To-Do Items
 
 - [x] Add references to the glossary
 - [x] Add distribution diagrams
 - [x] Add RPA evaluation design guideline
-- [ ] Add an interactive website
+- [ ] Add an interactive website -->
 
 
 ## Table of Content
 - [LLM Role-Playing Agent (RPA) Evaluation Survey](#llm-role-playing-agent-rpa-evaluation-survey)
-  - [To-Do Items](#to-do-items)
   - [Table of Content](#table-of-content)
   - [Abstract](#abstract)
   - [RPA Design](#rpa-design)
